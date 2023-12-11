@@ -20,9 +20,9 @@ namespace Poker
             {
 				
                 if (c == ' ' || c == '0')
-				{
-					continue;
-				}
+		{
+			continue;
+		}
 
                 else if (b)  
                 {
@@ -221,12 +221,12 @@ namespace Poker
 			else if(Straight_Flush()) count = 1;
 			else if(FourOfAKind())    count = 2;
 			else if(FullHouse())      count = 3;
-			else if(Flush()) 		  count = 4;
+			else if(Flush()) 	  count = 4;
 			else if(Straight())       count = 5;
 			else if(ThreeOfAKind())   count = 6;
 			else if(TwoPairs())       count = 7;
 			else if(OnePair())        count = 8;
-			else 			   		  count = 9;
+			else 			  count = 9;
 			return arr[count];
 		}
 		
@@ -236,9 +236,9 @@ namespace Poker
             strarr[0] = new char[13] {'2', '3', '4', '5',
                 '6', '7', '8', '9', '1', 'J', 'Q', 'K', 'A' };
             strarr[1] = new char[4] { 'C', 'D', 'H', 'S' };
-			bool[] arr = new bool[10];
+	    bool[] arr = new bool[10];
             skarti = Console.ReadLine().ToUpper();
-			Console.WriteLine(CheckKarti());
+	    Console.WriteLine(CheckKarti());
         }
     }
 }
